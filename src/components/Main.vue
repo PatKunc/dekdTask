@@ -98,6 +98,7 @@ const dataArr = ref([
 
 const deleteById = (ids)=>{
 dataArr.value = dataArr.value.filter((x) => !x.selected)
+idsToDelete.value = []
 switchComponent()
 }
 const changeTime = (date) => {
